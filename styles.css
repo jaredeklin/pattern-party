@@ -10,7 +10,16 @@ header {
   height: 70px;
   padding: 20px 50px;
   font-size: 24px;
+}
 
+button {
+  color: #FFF;
+  background-color: #3F3244;
+  height: 50px;
+  width: 30%;
+  display: block;
+  font-size: 18px;
+  margin: auto;
 }
 
 .party {
@@ -50,13 +59,11 @@ input {
 }
 
 label {
-  display: block;
+  /*display: block;*/
   float: left;
   width: 25%;
   height: 50px;
   color: #757575;
-  /*cursor: pointer;*/
-  /*text-decoration: none;*/
   text-align: center;
   background: #f0f0f0;
   border-bottom: 1px solid grey;
@@ -84,6 +91,7 @@ label {
   background: #fff;
   border: 1px solid grey;
   border-bottom: none;
+  font-weight: 600;
 }
 
 .box {
@@ -92,6 +100,8 @@ label {
   width: 90%;
   height: 100%;
   border: 1px solid grey;
+  background-image: url('./placeholder.png');
+  background-size: 100% 100%;
 }
 
 .content h2 {
@@ -105,6 +115,7 @@ label {
   grid-row: 2;
   padding-top: 20px;
 }
+
 /*
 flexible cards
 */
@@ -118,12 +129,56 @@ flexible cards
 }
 
 .card {
-  width: 30%;
+  width: 32%;
   height: 300px;
   border: 1px solid grey;
   margin: 10px 0;
 }
 
 .card-large {
-  width: 65%
+  width: 66%
 }
+
+/* accordian tabs mobile */
+
+@media screen and (max-width: 550px) {
+  
+  .tab-container {
+    width: 90%;
+/*    display: flex;
+    flex-direction: column;*/
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+  }
+
+  label {
+    display: block;
+    width: 100%;
+
+  }
+
+
+  #tab1:checked ~ #content1 {
+/*    grid-template-rows: unset;
+    grid-auto-columns: unset;
+    grid-row: 2;*/
+    /*order: 2*/
+  }
+
+  #content1 {
+    order: 0
+  }
+  /*#tab1:checked > article { order: -1; }*/
+  /*#tab2:checked :nth-sibling(2) { order: -1; }*/
+/*  #tab1:checked :nth-child(3) { order: 1; }
+  #tab1:checked :nth-child(4) { order: 3; }
+  #tab1:checked :nth-child(5) { order: 1; }*/
+}
+
+
+
+
+
+
+
+

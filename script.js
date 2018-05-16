@@ -1,5 +1,1 @@
 
-
-const tabClick = () => {
-  $(this)
-}
