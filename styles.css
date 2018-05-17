@@ -167,6 +167,10 @@ flexible cards
     margin: 8px auto 5px auto;
   }
 
+  .tab-container {
+    width: 90%;
+  }
+
   .name {
     display: block;
     float: unset;
@@ -204,6 +208,10 @@ flexible cards
   label {
     width: 100%;
     text-align: left;
+    background-image: url('add.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95%;
   }
 
   .content {
@@ -220,7 +228,10 @@ flexible cards
   }
 
   .tab-container input[type='radio']:checked + label {
-    /*text-align: left;*/
+    background-image: url('substract.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95%;
   }
 
   .tab-container input[type='radio']:checked + label + .content {
