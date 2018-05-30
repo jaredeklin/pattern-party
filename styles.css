@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  outline: none;
 }
 
 header {
@@ -167,6 +168,11 @@ flexible cards
   background-size: 100% 99%;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* header bar */
 
 .header-bar {
@@ -174,7 +180,7 @@ flexible cards
   background-color: #D1D2D3;
   color: #666666;
   width: 80%;
-  margin: auto;
+  margin: 45px auto 55px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,10 +193,13 @@ flexible cards
   height: 65px;
   margin: 0;
   border-radius: 50%;
+  background: url(./placeholder.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 .header-bar ul {
   display: flex;
+  padding: 0;
 }
 
 .header-bar li {
