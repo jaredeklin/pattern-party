@@ -24,6 +24,7 @@ button {
   display: block;
   font-size: 18px;
   margin: 30px auto 100px auto;
+  cursor: pointer;
 }
 
 .party {
@@ -145,9 +146,74 @@ flexible cards
   margin: 10px 0;
 }
 
+.card h2 {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+  height: 40px;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-overflow: ellipsis;
+}
+
 .card-large {
   width: 66%
 }
+
+.card-img {
+  border-top: 1px solid grey;
+  height: 241px;
+  background: url(./placeholder.png) no-repeat;
+  background-size: 100% 99%;
+}
+
+/* header bar */
+
+.header-bar {
+  height: 100px;
+  background-color: #D1D2D3;
+  color: #666666;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.header-bar button {
+  width: 65px;
+  height: 65px;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.header-bar ul {
+  display: flex;
+}
+
+.header-bar li {
+  display: flex;
+  margin: 0 20px;
+}
+
+.header-bar a {
+  cursor: pointer;
+}
+
+.search-bar {
+  display: unset;
+  width: 25%;
+  height: 40px;
+  background-image: url(./search.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 20px;
+  padding-left: 5%;
+  font-size: 20px;
+}
+
 
 /* accordian tabs mobile */
 
@@ -242,6 +308,20 @@ flexible cards
     display: block;
     height: 100px;
     width: 100%
+  }
+
+
+
+  /* flexible cards mobile */
+
+  .flexible-cards {
+    width: 90%;
+    height: 965px;
+    overflow-y: scroll;
+  }
+
+  .card {
+    width: 100%;
   }
 }
 
