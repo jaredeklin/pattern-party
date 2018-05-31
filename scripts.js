@@ -4,7 +4,7 @@ const mobileLook = () => {
   }
 }
 
-$('.x-button').on('click', mobileLook)
+$('.menu').on('click', mobileLook)
 
 
 
